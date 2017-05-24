@@ -1,0 +1,54 @@
+URL:: jiitsimplified.com/v3/  
+
+All parameters are of type POST.
+
+Supported actions: login, add_product , delete_product , edit_product , search_product
+
+$_POST['action'] == login:
+	$_POST['username']
+	$_POST['password']
+	-- returns TOKEN
+	
+$_POST['action'] == add_product:
+	$_POST['username']
+	$_POST['token']
+	$_POST['product_name']
+	$_POST['product_price']
+	-- returns SUCCESS
+
+$_POST['action'] == delete_product:
+	$_POST['username']
+	$_POST['token']
+	$_POST['product_id']
+	-- returns SUCCESS
+
+$_POST['action'] == edit_product:
+	$_POST['username']
+	$_POST['token']
+	$_POST['product_id']
+	$_POST['new_product_name']
+	$_POST['new_product_price']
+	-- returns SUCCESS
+
+$_POST['action'] == search_product:
+	$_POST['username']
+	$_POST['token']
+	$_POST['search_item']
+	-- returns SEARCH RESULT	
+______________________________________________________________
+
+
+SUCCESS example
+
+Searching a Product with search term "iphone"
+[{"product_id":"2","product_name":"Iphone","product_price":"60000"},{"product_id":"3","product_name":"iphone7","product_price":"80000"}]
+
+
+!SUCCESS example
+
+"Please Send all parameters !!"
+
+______________________________________________________________
+
+
+For further information feel free to contact Vaibhav Bansal @ +91 8130930429.
