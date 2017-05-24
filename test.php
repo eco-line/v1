@@ -4,7 +4,7 @@ error_reporting(E_ALL); ini_set('display_errors', '1');
 function curl_req($data){
 	$ch        = curl_init();
 	$post_data = $data;				
-	curl_setopt($ch, CURLOPT_URL           , 'http://localhost/v1/');
+	curl_setopt($ch, CURLOPT_URL           , 'http://vaibhavbansal.in/v1/');
 	curl_setopt($ch, CURLOPT_NOBODY        , true);
 	curl_setopt($ch, CURLOPT_HEADER        , false);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

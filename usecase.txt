@@ -1,4 +1,4 @@
-URL:: jiitsimplified.com/v3/  
+URL:: http://vaibhavbansal.in/v1/ 
 
 All parameters are of type POST.
 
